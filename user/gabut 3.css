@@ -1,0 +1,13 @@
+.icon { 
+    position: relative;
+    display: inline-flex;
+}
+
+.icon i {
+    font-size: 36px;
+    background: radial-gradient(circle at 30%, )
+    -Webkit-text
+}
+
+.icon::before
+.icon::after

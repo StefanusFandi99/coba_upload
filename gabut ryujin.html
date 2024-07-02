@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 
+        Shin Ryujin
+    </title>
+    <style> 
+    .flip-card { 
+        background-color: transparent;
+        width: 100px;
+        height: 100px;
+        perspective: 100px;
+    }
+    .flip-card-inner { 
+        position: absolute;
+        width: 240px;
+        height: 180px;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .flip-card-hover .flip-card-inner { 
+        transform: rotateY(90deg);
+    }
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 240px;
+        height: 250px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+    .flip-card-front{
+        background-image: 
+        linear-gradient(45deg, #6f04d9, #d9048e);
+    }
+    .flip-card-front img {
+        width: 220px;
+        margin-top: 1rem;
+    }
+    .flip-card-back { 
+        background-attachment: linear-gradient (315deg, #6f04d9, #8a045c);
+        color: #ffffff;
+        transform: rotate3d(90deg);
+    }
+    .flip-card-back img {
+        width: 180px;
+        margin-top: 1rem;
+     }
+     .flip-card-back h1 { 
+         margin-bottom: 1rem;
+     }
+    </style>
+</head>
+<body> 
+        <div class="flipcard">
+            <div class="flip-card-inner"> 
+                <div> 
+                    <div class="flip-card-front"> 
+                        <image src="image.jpg"> </image>
+                         </div>
+                                <div class="flip-card-back">
+                                <image src="image.jpg"> </image> 
+                         <h1> arrgghhhhh </h1> </div>
+                    </div>
+                </div>
+                
+            </div> 
+        
+        </div>
+
+</body>
+</html>
